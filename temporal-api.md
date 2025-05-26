@@ -43,4 +43,62 @@ dateTime.toPlainDate();    // PlainDate object
   duration.total({ unit: 'hours' });   // Total hours
   ```
 
+### 🌍 Working with Time Zones
+```javascript
+const zoned = Temporal.ZonedDateTime.now('America/New_York');
+zoned.toPlainDateTime();    // Converts to PlainDateTime
+zoned.withTimeZone('UTC');  // Change time zone
+```
+
+### 📅 Comparing Dates
+
+```javascript
+Temporal.PlainDate.compare(date1, date2);  // -1, 0, or 1
+date.equals(anotherDate);                  // true or false
+```
+
+### 📏 Difference Between Dates
+```javascript
+const diff = date1.until(date2);   // Temporal.Duration object
+const diffDuration = date1.since(date2);
+```
+
+### 🧹 Rounding
+```javascript
+    const rounded = Temporal.Instant.from('2025-05-26T12:30:45Z')
+    .round({ smallestUnit: 'minute' });  // '2025-05-26T12:31:00Z'
+```
+
+## ❓ Why use Temporal?
+
+✅ Immutable objects  
+✅ Safer than `Date`  
+✅ Built-in support for time zones  
+✅ Precise arithmetic with durations  
+✅ Clear and consistent API  
+
+---
+
+## 📝 Useful Patterns
+
+- Use `Temporal.Now.*` for current time data.
+- Prefer `ZonedDateTime` for operations involving time zones.
+- Use `Duration` for time spans (e.g., delays, intervals).
+
+---
+
+## 📚 Resources
+
+- [TC39 Temporal Proposal](https://tc39.es/proposal-temporal/)
+- [MDN Temporal Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal)
+- [Polyfill](https://github.com/tc39/proposal-temporal#polyfill)
+"""
+
+# Saving the snippet into a markdown file
+snippet_file_path = '/mnt/data/temporal_snippet.md'
+with open(snippet_file_path, 'w') as file:
+    file.write(temporal_snippet_content)
+
+snippet_file_path
+
   
