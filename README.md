@@ -4,13 +4,9 @@ Este repositório contém diversos arquivos de atalhos e resumos sobre tecnologi
 
 ## Tecnologias incluídas
 - [Git](https://github.com/pvstelles/cheat-sheet/blob/main/src/git.md)
-- JavaScript
-- TypeScript
-- Node.js
-- React
 - [Docker](https://github.com/pvstelles/cheat-sheet/blob/main/src/docker.md)
-- Outros
-- 
+- [Temporal API](https://github.com/pvstelles/cheat-sheet/blob/main/src/temporal-api.md)
+
 ## Como usar
 Acesse o arquivo correspondente e utilize como referência rápida.
 
