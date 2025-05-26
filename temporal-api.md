@@ -38,10 +38,10 @@ dateTime.toPlainDate();    // PlainDate object
 - Represents a length of time.
 - Not tied to specific start or end points.
 
-  ```javascript
-  const duration = Temporal.Duration.from({ days: 3, hours: 4 });
-  duration.total({ unit: 'hours' });   // Total hours
-  ```
+```javascript
+const duration = Temporal.Duration.from({ days: 3, hours: 4 });
+duration.total({ unit: 'hours' });   // Total hours
+```
 
 ### 🌍 Working with Time Zones
 ```javascript
@@ -65,8 +65,8 @@ const diffDuration = date1.since(date2);
 
 ### 🧹 Rounding
 ```javascript
-    const rounded = Temporal.Instant.from('2025-05-26T12:30:45Z')
-    .round({ smallestUnit: 'minute' });  // '2025-05-26T12:31:00Z'
+const rounded = Temporal.Instant.from('2025-05-26T12:30:45Z')
+.round({ smallestUnit: 'minute' });  // '2025-05-26T12:31:00Z'
 ```
 
 ## ❓ Why use Temporal?
