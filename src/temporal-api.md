@@ -94,11 +94,6 @@ const rounded = Temporal.Instant.from('2025-05-26T12:30:45Z')
 - [Polyfill](https://github.com/tc39/proposal-temporal#polyfill)
 """
 
-# Saving the snippet into a markdown file
-snippet_file_path = '/mnt/data/temporal_snippet.md'
-with open(snippet_file_path, 'w') as file:
-    file.write(temporal_snippet_content)
-
-snippet_file_path
+[Voltar para HOME](https://github.com/pvstelles/cheat-sheet/blob/main/README.md)
 
   
